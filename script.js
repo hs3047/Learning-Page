@@ -86,26 +86,15 @@ function submitted1() {
   alert("Your input has been emailed to the teacher. Now let's discuss with your group members about the project you have chosen.");
 }
 
-function submitted2() {
-  alert("Welcome to the Pi world!");
-}
-
 // interaction with the select //
 function answer() {
   var ans = document.getElementById("select").value;
     document.getElementById("answertxt").innerHTML = "You selected " + ans + "!  We are going to learn next how you can make it do what you want.";
 }
 
-const myform = document.querySelector("#myForm");
-myform.addEventListener('submit', formSubmitted);
-
-function formSubmitted(event) {
-if(!myform.firstname.value || myform.firstname.value.length > 20)
-{
-document.querySelector("#firstname").classList.add("error");
-}
-if(!myform.lastname.value || myform.lastname.value.length > 30)
-{
-document.querySelector("#lastname").classList.add("error");
-}
+// The interaction on click on the button
+function button() {
+  var userName = document.getElementById("yourName").value;
+  var emailAddess = document.getElementById("yourEmailAddress").value;
+  window.open('mailto:' + "");
 }

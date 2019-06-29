@@ -4,10 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!---- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css ---->
   </head>
 
 <!---- header ---->
@@ -110,7 +109,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-            <h2><font color=#C71585>Challenge</font></h2>
+            <h2><font color=#C71585>Check Point</font></h2>
             <p>Now you've learned about the different Raspberry Pi models, which model do you think would be best for each of these projects?</p>
             <br>
             <p><strong>Project 1: Use a Pi to make a burglar alarm to guard your class's secret treasure.</strong> <em> (Hint: You will need a small model with GPIO pins.) </em></p>
@@ -159,10 +158,10 @@
       <div class="row">
         <div class="col-xs-12">
           <h2><font color=#C71585>Tinkering</font></h2>
-            <p><span>When you first learn to code, chances are you will write a program to display "Hello, World!" on the screen. When learning electronics, you will make something "light up" Before we build anything fancy, let's make your LED to light up!</span></p><br>
-            <p><span>Click each step as you complete it:</span></p><br>
+            <p><span>When you first learn to code, chances are you will write a program to display "Hello, World!" on the screen. When learning electronics, you will make something "light up." Before we build anything fancy, let's set up your Pi and make its LED light up!</span></p><br>
+            <p><span>Click on each step below:</span></p><br>
 
-    <div class="panel-group" id="accordion">
+<div class="panel-group" id="accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
@@ -220,15 +219,17 @@
         </div>
       </div>
       <br>
-      <br>
 
-<!---- Steps ---->
+<!---- Data ---->
+<div class="row">
+        <div class="col-xs-12">
+        <h2><font color=#C71585>Stay Connected</font></h2>
+         <p><span>Subscribe to the Raspberry Pi newsletter and do incredible things with Pi every day.</span></p><br>
+
     <div class="row">
        <div class="col-xs-6">
             <p>What project can you think about using Pi?</p>
-            <textarea rows="1" class="form-control"></textarea><br>
-            <button type="button" class="btn btn-success btn-lg active" onclick="submitted1()" type="submit" id="button1">Submit</button>
-
+            <textarea rows="2" class="form-control"></textarea><br>
           </div>
      <div class="col-xs-6">
             <p>Which Pi are you going to use for the project?</p>
@@ -245,20 +246,19 @@
           </div>
        </div>
      </div>
-     <br>
-     <br>
-     <br>
 
-      <div class="row">
-        <div class="col-xs-12">
-        <h2><font color=#C71585>Stay Connected</font></h2>
-         <p><span>Subscribe to Raspberry Pi newsletter and do incredible things with Pi every day.</span></p>
-         <label for="yourName"></label>
+         <label for="yourName">Please write your name and email so we can send more info to help with your project!</label>
          <input type="text" class="form-control" id="yourName" placeholder="Full Name">
          <label for="yourEmail"></label>
          <input type="email" id="yourEmailAddress" class="form-control" placeholder="Email Address">
         <br>
-        <button type="button" onclick="submitted2()" class="btn btn-success btn-lg active">Connect Me</button><br><br><br><br>                     <p class="text-center"><a href="https://codepen.io/hs3047/pen/byXxzp" target="_blank"><font color=#C71585>Link to Teachers Page</a></p>
+       <button type="button" onclick="button()" class="btn btn-success btn-lg active">Submit</button>
+          </div>
+</div>
+<br>
+  <div class="row">
+        <div class="col-xs-12">
+  <p class="text-center"><a href="https://codepen.io/hs3047/pen/byXxzp" target="_blank"><font color=#C71585>Link to Teachers Page</a></p>
       </div>
      </div>
 

@@ -35,14 +35,14 @@ span {
 
 .small {
  margin: 0 10px;
- width: 400px;
- height: 400px;
+ width: 350px;
+ height: 350px;
 }
 
 .big {
  margin: 0 10px;
- width: 800px;
- height: 800px;
+ width: 700px;
+ height: 700px;
 }
 
 .panel-default > .panel-heading {
