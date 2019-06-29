@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+<!---- header ---->
+<body>
+  <div class="heading">
+    <div class="container">
+      <br>
+    <h1><font color=#C71585>All About Raspberry Pi</br><small>The Mini Computer</small></font></h1>
+    </div>
+  </div>
+
+<!---- content ---->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2><font color=#C71585>What is Raspberry Pi?</font></h2>
+      </div>
+    </div>
+    <p>Raspberry Pi is mini, single-board computer capable of doing almost everything that an ordinary computer can do. It is designed to help children learn the basics of computing and programming, and its small size makes it useful for lots of different projects. The Raspberry Pi looks very different from other computers as it comes without a case, so you can see its microchips and circuit board.</p>
+  </div>
+  <br>
+
+<!---- video from Raspberry Pi ---->
+  <center>
+    <iframe id="vimeo-1" src="//players.brightcove.net/1571595843001/S1l2jKEEVb_default/index.html?videoId=5201642774001" type="video/mp4"" width="845" height="475" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </center>
+  <br>
+  <center>
+    <button type="button" onclick="buttonInfo()" class="btn btn-success btn-lg active" <i class="glyphicon glyphicon-thumbs-up"></i> Tell Me More About Raspberry Pi</button>
+  </center>
+  <br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2><font color=#C71585>Raspberry Pi Line-Up</font></h2>
+      <p>Have you ever seen a Raspberry Pi? There are lots of different models, and they do many amazing things. Some of the smaller models are great for putting inside other things, such as spy cameras. Other models can control robots, make games for you to play, and much more.</p><br>
+      <p>Click the image to see it bigger and zoom to read inside of the Pie:</p>
+      <br>
+
+ <!---- image from wikipedia ---->
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img  class="small" id="img1" src="https://user-images.githubusercontent.com/50973054/59153165-36d51980-8a21-11e9-8678-244a57878448.png" alt="Image 1">
+          </div>
+        </div>
+
+<!---- image description ---->
+        <div class="col-xs-6">
+          <h3>The Original Model B</h3>
+          <p>This is an old Raspberry Pi model. It is still a perfectly good tool for learning how computers work, learning how to interface strange hardware, learning the Internet of Things. The telltale sign is that there are only two USB ports and 26 GPIO pins. If you find one of there, it will still work but it'll be slower than the newer model.</p>
+        </div>
+      </div>
+
+<!---- image from wikipedia ---->
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img class="small" id="img2" src="https://user-images.githubusercontent.com/50973054/59153183-9501fc80-8a21-11e9-886d-e003ef6b93ee.png" alt="Image 2">
+          </div>
+        </div>
+        <!--image description -->
+        <div class="col-xs-6">
+          <h3>Pi 3</h3>
+          <p>This is the latest version of the Model B and the best to use when you're getting started and learning how to program. The Pi 3 comes with Wi-Fi and Bluetooth.  Two earlier versions - Model b+ and Pi 2 - look very similar to the Pi 3. Ask an adult to help you make sure you get the right model if you want a Pi 3.</p>
+        </div>
+      </div>
+
+<!---- image from wikipedia ---->
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img class="small" id="img3" src="https://user-images.githubusercontent.com/50973054/59153186-b19e3480-8a21-11e9-8bb1-9ce6f98f6e67.png"  alt="Image 3">
+          </div>
+        </div>
+        <!--image description -->
+        <div class="col-xs-6">
+          <h3>Model A+</h3>
+          <p>This almost-square Raspberry Pi model is great for projects that need a smaller computer.  It's not as fast as the Pi 3 and doesn't have built-in Wi-Fi to connect it to the internet. It uses less power than the bigger models, which is useful if you need to use batteries to power it.</p>
+        </div>
+      </div>
+
+<!---- image from wikipedia ---->
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img class="big" id="img4" src="https://user-images.githubusercontent.com/50973054/59153192-c8448b80-8a21-11e9-884b-f4dac05c2782.png" alt="Image 4">
+          </div>
+        </div>
+
+<!---- image description ---->
+        <div class="col-xs-6">
+          <h3>Pi Zero</h3>
+          <p>This model is the cheapest and smallest of the Pi family. It needs adapters to be able to connect to a keyboard and mouse. It doesn't have GPIO pins, but you can solder them on. The Pi Zero is best suited to really small projects.</p>
+        </div>
+        <br>
+
+<!---- content ---->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+            <h2><font color=#C71585>Challenge</font></h2>
+            <p>Now you've learned about the different Raspberry Pi models, which model do you think would be best for each of these projects?</p>
+            <br>
+            <p><strong>Project 1: Use a Pi to make a burglar alarm to guard your class's secret treasure.</strong> <em> (Hint: You will need a small model with GPIO pins.) </em></p>
+            <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> A. Model B</button></p>
+            <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> B. Pi 3</button></p>
+            <p><button class="btn btn-success btn-lg active" onclick="right1()"> C. Model A+</button></p>
+            <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> D. Pi Zero</button></p>
+        <br>
+
+          <p><strong>Project 2: Use a Pi to control a small teddy bear so that it works like a robot.</strong> <em> (Hint: You will need a very small model to fit inside your teddy.) </em></p>
+          <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> A. Model B</button></p>
+          <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> B. Pi 3</button></p>
+          <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> C. Model A+</button></p>
+          <p><button class="btn btn-success btn-lg active" onclick="right1()"> D. Pi Zero</button></p>
+          <br>
+
+          <p><strong>Project 3: Use a Pi to make an insect observatory that records what bugs get up to when no one's around, and share the photographs on the school website.</strong> <em>(Hint: You will need a Pi with Wi-Fi to send the photographs.)</em></p>
+          <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> A. Model B</button></p>
+          <p><button class="btn btn-success btn-lg active" onclick="right1()"> B. Pi 3</button></p>
+          <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> C. Model A+</button></p>
+          <p><button class="btn btn-success btn-lg active" onclick="wrong1()"> D. Pi Zero</button></p>
+          <br>
+
+          <p><strong>Does Raspberry Pi need external hardware?</p>
+             <label><span>
+                <input type="radio" name="valid" value="1" onclick="questionOneYes()"> Yes
+              </span></label>
+              <label><span>
+                <input type="radio" name="valid" value="2" onclick="questionOneNo()"> No
+              </span></label><br><br>
+
+            <p><strong>Does Raspberry Pi have internal memory?</p>
+              <label><span>
+                <input type="radio" name="valid" value="1" onclick="questionTwoYes()"> Yes
+              </span></label>
+              <label><span>
+                <input type="radio" name="valid" value="2" onclick="questionTwoNo()"> No
+              </span></label>
+            </div>
+          </div>
+        </div>
+        <br>
+
+<!---- Thinkering ---->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><font color=#C71585>Tinkering</font></h2>
+            <p><span>When you first learn to code, chances are you will write a program to display "Hello, World!" on the screen. When learning electronics, you will make something "light up" Before we build anything fancy, let's make your LED to light up!</span></p><br>
+            <p><span>Click each step as you complete it:</span></p><br>
+
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" style="font-size:20px data-parent="#accordion" href="#step1">
+       Step 1: Insert the LED into the breadboard</a>
+          </h4>
+        </div>
+        <div id="step1" class="panel-collapse collapse in">
+          <div class="panel-body"><span>Choose an LED, and look at its legs carefully. Connect the long (positive) leg to the Pin 17 and then connect the short (negative) leg to the GND.</span></div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#step2">
+        Step 2: Add a resistor</a>
+          </h4>
+        </div>
+        <div id="step2" class="panel-collapse collapse">
+          <div class="panel-body"><span>Place a resistor so it connects with the short (negative) leg of the LED.</span></div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#step3">
+        Step 3: Wire to the Pi</a>
+          </h4>
+        </div>
+        <div id="step3" class="panel-collapse collapse">
+          <div class="panel-body"><span>Connect the wire to Pin 17 and another of wire to the GND pin (via a hole in the same breadboard column).</span></div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#step4">
+        Step 4: Grounding</a>
+          </h4>
+        </div>
+        <div id="step4" class="panel-collapse collapse">
+          <div class="panel-body"><span>Finally, for the current to flow, it needs a ground. Connect another wire to the GND pin to complete the circuit.</span></div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#step5">
+        Step 5: Code</a>
+          </h4>
+        </div>
+        <div id="step5" class="panel-collapse collapse">
+          <div class="panel-body"><span>
+            You are going to program your LED in Python with the GPIO Zero library to control the LED.</span></div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+<!---- Steps ---->
+    <div class="row">
+       <div class="col-xs-6">
+            <p>What project can you think about using Pi?</p>
+            <textarea rows="1" class="form-control"></textarea><br>
+            <button type="button" class="btn btn-success btn-lg active" onclick="submitted1()" type="submit" id="button1">Submit</button>
+
+          </div>
+     <div class="col-xs-6">
+            <p>Which Pi are you going to use for the project?</p>
+              <select id="select" class="form-control" onchange="answer()">
+                <option onclick>Select your model
+                 <option>Model B
+                 <option>Pi 3
+                 <option>Model A+
+                 <option>Pi Zero
+              </select><br>
+
+       <div class="col-xs-12">
+        <p id="answertxt"></p>
+          </div>
+       </div>
+     </div>
+     <br>
+     <br>
+     <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+        <h2><font color=#C71585>Stay Connected</font></h2>
+         <p><span>Subscribe to Raspberry Pi newsletter and do incredible things with Pi every day.</span></p>
+         <label for="yourName"></label>
+         <input type="text" class="form-control" id="yourName" placeholder="Full Name">
+         <label for="yourEmail"></label>
+         <input type="email" id="yourEmailAddress" class="form-control" placeholder="Email Address">
+        <br>
+        <button type="button" onclick="submitted2()" class="btn btn-success btn-lg active">Connect Me</button><br><br><br><br>                     <p class="text-center"><a href="https://codepen.io/hs3047/pen/byXxzp" target="_blank"><font color=#C71585>Link to Teachers Page</a></p>
+      </div>
+     </div>
+
+     </body>
+   </html>

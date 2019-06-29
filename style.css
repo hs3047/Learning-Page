@@ -1,0 +1,60 @@
+body{
+  font-family: Trebuchet MS;
+  font-smoothing: antialiased;
+  font-size: 20px;
+  background-color: #9ACD32;
+}
+
+.heading h1 {
+  color: #C71585;
+  padding-bottom: 30px;
+  border-bottom: 2px solid white;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: 50px;
+}
+
+thumbnail {
+    background: #9ACD32;
+    border: 0 none;
+    box-shadow: none;
+}
+
+span {
+   font-weight: normal;
+}
+
+.button {
+ margin: 50px auto;
+ width: 1000px;
+ height: 150px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.small {
+ margin: 0 10px;
+ width: 400px;
+ height: 400px;
+}
+
+.big {
+ margin: 0 10px;
+ width: 800px;
+ height: 800px;
+}
+
+.panel-default > .panel-heading {
+  background-color: #9a6faa;
+  color: #FFFFFF;
+}
+
+.panel-title {
+ font-size: 18px;
+}
+
+.panel-body {
+ font-color: #C71585;
+ font-size: 16px;
+}
